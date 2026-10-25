@@ -10,7 +10,7 @@ Biomathematics 374, Stellenbosch University — Serena Taylor Parkins & Katharin
 Three stages combined into one pipeline:
 
 1. **Network A** — a neural-network classifier trained on real clinical data and
-   validated against diabetes labels (the empirical anchor). Features are chosen with
+   validated against diabetes labels. Features are chosen with
    a three-way train/validation/test split, the output is a softmax probability, and
    the network is compared against a logistic-regression baseline with bootstrap
    confidence intervals.
@@ -18,7 +18,7 @@ Three stages combined into one pipeline:
    patient's metabolic burden into a 50-year brain trajectory (insulin signalling,
    GSK-3β, amyloid, tau, neuroinflammation, neuronal density), with two feedback
    loops. Solved with `ode45`.
-3. **Network B** — a surrogate network that emulates the ODE so interventions can be
+3. **Network B** — a surrogate network that is like the ODE so interventions can be
    searched quickly.
 
 ## Files
@@ -71,5 +71,5 @@ rather than learned from data.
 ## Generative AI use declaration
 
 Generative AI (Claude) was used to help draft and comment the code and structure the
-write-up. All results were verified, and the mathematics and modelling choices are the
-authors' own understanding.
+write-up. All results were verified, and the mathematics and modelling are the
+authors' own work and understanding.
