@@ -53,13 +53,20 @@ demo. Edit the `demoPatient` block at the top of the file to change the demo pat
   results, numerical-analysis stats and intervention results.
 - **Figures** — the ODE trajectories, the intervention bar chart, and the live-demo plots.
 
-## Data and code availability
+## Reproducibility
+- MATLAB release: R2026a, with the Statistics and Machine Learning Toolbox
+- Random seed: rng(12, 'twister'), set at the top of biomath.m, so every run
+  gives the same data split and the same results as final_run.txt
+- To reproduce: put biomath.m and diabetes_model_input.csv in the same folder,
+  run biomath, and compare the new final_run.txt with the one in this repository
 
-Data and code availability
+## Data
+Li, J., Zheng, H., Zhou, Y. & Jiang, F. 2026. Diabetes and its complications
+research dataset (Version v10). Zenodo. https://doi.org/10.5281/zenodo.18270337
 
-The dataset is Diabetes and its complications research dataset by Li, Zheng, Zhou & Jiang (2026), obtained from Zenodo (DOI: 10.5281/zenodo.18270337, licensed CC BY 4.0) and cleaned for this project (duplicate columns removed, text encoding fixed, two physically impossible blood-pressure records removed). All code to reproduce the results is in this repository.
-
-Data citation: Li, J., Zheng, H., Zhou, Y., & Jiang, F. (2026). Diabetes and its complications research dataset [Data set]. Zenodo. https://doi.org/10.5281/zenodo.18270337
+Licence: CC BY 4.0. diabetes_model_input.csv is our cleaned version of this
+dataset: no participants were removed, 29 of the columns were kept or derived,
+and implausible values were set to missing .
 
 ## Note on the model
 
