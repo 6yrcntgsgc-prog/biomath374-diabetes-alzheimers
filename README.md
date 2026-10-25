@@ -55,9 +55,11 @@ demo. Edit the `demoPatient` block at the top of the file to change the demo pat
 
 ## Data and code availability
 
-The dataset is a de-identified community diabetes-screening cohort, cleaned from the
-original file to the variables used here. All code to reproduce the results is in this
-repository.
+Data and code availability
+
+The dataset is Diabetes and its complications research dataset by Li, Zheng, Zhou & Jiang (2026), obtained from Zenodo (DOI: 10.5281/zenodo.18270337, licensed CC BY 4.0) and cleaned for this project (duplicate columns removed, text encoding fixed, two physically impossible blood-pressure records removed). All code to reproduce the results is in this repository.
+
+Data citation: Li, J., Zheng, H., Zhou, Y., & Jiang, F. (2026). Diabetes and its complications research dataset [Data set]. Zenodo. https://doi.org/10.5281/zenodo.18270337
 
 ## Note on the model
 
